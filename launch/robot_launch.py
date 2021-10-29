@@ -28,6 +28,15 @@ def generate_launch_description():
             arguments="0 0 0 0 0 0 base_link base_footprint".split(' ')
         ),
         
+        # Transform from laser > laser_frame
+        # Required by slam_toolbox
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='transform_laser_laser_frame',
+            arguments="0 0 0 0 0 0 laser laser_frame".split(' ')
+        ),
+        
         # laser_scan_matcher Node
         Node(
             package='ros2_laser_scan_matcher',
