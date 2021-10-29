@@ -1,3 +1,6 @@
 [submodule "src/mcu_bridge"]
 	path = src/mcu_bridge
 	url = https://github.com/APSCL/mcu_bridge.git
+[submodule "src/rplidar_ros"]
+	path = src/rplidar_ros
+	url = https://github.com/allenh1/rplidar_ros.git
