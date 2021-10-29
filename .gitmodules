@@ -1,0 +1,3 @@
+[submodule "src/mcu_bridge"]
+	path = src/mcu_bridge
+	url = https://github.com/APSCL/mcu_bridge.git
