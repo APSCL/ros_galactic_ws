@@ -19,13 +19,13 @@ def generate_launch_description():
             arguments="0 0 0 0 0 0 base_link laser".split(' ')
         ),
         
-        # Transform from base_footprint > base_link
+        # Transform from base_link > base_footprint
         # Required by slam_toolbox
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
-            name='transform_base_footprint_base_link',
-            arguments="0 0 0 0 0 0 base_footprint base_link".split(' ')
+            name='transform_base_link_base_footprint',
+            arguments="0 0 0 0 0 0 base_link base_footprint".split(' ')
         ),
         
         # laser_scan_matcher Node
@@ -33,9 +33,7 @@ def generate_launch_description():
             package='ros2_laser_scan_matcher',
             executable='laser_scan_matcher',
             name='laser_scan_matcher',
-            parameters=[
-		    {"publish_tf": True}
-		    ]
+            parameters=[{"publish_tf": True}]
         ),
     ])
 
