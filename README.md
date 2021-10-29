@@ -1,5 +1,5 @@
-# ros_galactic_ws
-This is a developmental workspace based on the Foxy workspace intended to explore performance and stability enchancements.
+# ROS Galactic Workspace
+This is a developmental workspace based on previous work on Foxy intended to explore performance and stability enhancements.
 
 ## Getting Started
 1. Clone this project and navigate to root.
