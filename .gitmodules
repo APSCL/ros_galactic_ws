@@ -4,3 +4,9 @@
 [submodule "src/rplidar_ros"]
 	path = src/rplidar_ros
 	url = https://github.com/allenh1/rplidar_ros.git
+[submodule "src/csm"]
+	path = src/csm
+	url = https://github.com/AlexKaravaev/csm.git
+[submodule "src/ros2_laser_scan_matcher"]
+	path = src/ros2_laser_scan_matcher
+	url = https://github.com/AlexKaravaev/ros2_laser_scan_matcher.git
