@@ -3,7 +3,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
-    	# LIDAR Node
+    	# rplidar Node
         Node(
             package='rplidar_ros',
             executable='rplidar_composition',
@@ -26,6 +26,16 @@ def generate_launch_description():
             executable='static_transform_publisher',
             name='transform_base_footprint_base_link',
             arguments="0 0 0 0 0 0 base_footprint base_link".split(' ')
+        ),
+        
+        # laser_scan_matcher Node
+        Node(
+            package='ros2_laser_scan_matcher',
+            executable='laser_scan_matcher',
+            name='laser_scan_matcher',
+            parameters=[
+		    {"publish_tf": True}
+		    ]
         ),
     ])
 
