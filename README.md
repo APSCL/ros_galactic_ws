@@ -1,4 +1,4 @@
-# ROS Galactic Workspace
+# ROS 2 Galactic Workspace
 This is a developmental workspace based on previous work on Foxy intended to explore performance and stability enhancements.
 
 ## Getting Started
