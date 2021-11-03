@@ -7,3 +7,6 @@
 [submodule "src/csm"]
 	path = src/csm
 	url = https://github.com/AlexKaravaev/csm.git
+[submodule "ros2_laser_scan_matcher"]
+	path = ros2_laser_scan_matcher
+	url = https://github.com/fchibana/ros2_laser_scan_matcher.git
