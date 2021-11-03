@@ -1,4 +1,4 @@
 SUBSYSTEM=="usb", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60",
 ATTRS{serial}=="0001", SYMLINK+="rplidar"
 SUBSYSTEM=="usb", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60",
-ATTRS{serial}=="6a4c6b61b068e911b38f70d63ca6d3af", SYMLINK+="ttyESP"
+ATTRS{serial}=="6a4c6b61b068e911b38f70d63ca6d3af", SYMLINK+="ttyMCU"
