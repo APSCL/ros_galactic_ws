@@ -3,6 +3,12 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
+        Node(
+            package='mcu_bridge',
+            executable='basic_bridge',
+            name='basic_bridge'
+        ),
+        
     	# rplidar Node
         Node(
             package='rplidar_ros',
