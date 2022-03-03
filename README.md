@@ -10,6 +10,16 @@ Please first install Ubuntu 20.04 (dual system or virtual machine) and [ros2 gal
 Please note that the ros2 distribution is **galactic**, it may be needed in some commands.
 
 ## Getting Started
+### On Raspberry Pi
 1. Clone this project and navigate to root.
 2. Build the workspace: ```colcon build --symlink-install```
 3. Source the workspace: ```source ./install/setup.bash```
+4. Start running ROS: ```ros2 launch ./launch/robot_launch.py```
+
+### On Ubuntu Desktop
+1. Clone this project and navigate to root.
+2. Make sure to source the command by ```source /opt/ros/galactic/setup.bash```
+3. Running Nav2 command by: ```./launch/nav2_launch.sh```
+4. Running SLAM command by: ```./launch/slam_launch.sh```
+5. Open ROS Visualizer by: ```rviz2```
+6. Select File -> Open Config -> Select ```./launch/nav2.rviz```
