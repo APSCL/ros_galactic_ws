@@ -50,6 +50,8 @@ amcl_rclcpp_node:
 bt_navigator:
   ros__parameters:
     use_sim_time: False
+    default_nav_to_pose_bt_xml: ./nav_through_pose_tree.xml
+    default_nav_through_poses_bt_xml: ./nav_through_pose_tree.xml
     global_frame: map
     robot_base_frame: base_link
     odom_topic: /odom
