@@ -18,8 +18,8 @@ Please note that the ros2 distribution is **galactic**, it may be needed in some
 ### On Ubuntu Desktop
 1. Clone this project and navigate to root.
 2. (For the first time) Build the workspace: ```colcon build --symlink-install```
-3. Make sure to source the command by ```source /opt/ros/galactic/setup.bash```
-4. Running Nav2 command by: ```./launch/nav2_launch.sh```
-5. Running SLAM command by: ```./launch/slam_launch.sh```
-6. Open ROS Visualizer by: ```rviz2```
-7. Select File -> Open Config -> Select ```./launch/nav2.rviz```
+3. Make sure to source the command by ```source /opt/ros/galactic/setup.bash``` (```setup.zsh``` if running in zsh)
+4. Running SLAM command by: ```./launch/slam_launch.sh```
+5. Running Nav2 command by: ```./launch/nav2_launch.sh``` (if running mecnaum wheel agv please directly use command ```ros2 launch nav2_bringup navigation_launch.py params_file:=nav2_mecnaum.yaml```)
+7. Open ROS Visualizer by: ```rviz2```
+8. Select File -> Open Config -> Select ```./launch/nav2.rviz```
