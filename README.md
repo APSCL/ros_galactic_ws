@@ -9,6 +9,8 @@ Please first install Ubuntu 20.04 (dual system or virtual machine) and [ros2 gal
 
 Please note that the ros2 distribution is **galactic**, it may be needed in some commands.
 
+The installation may have some error due to the setuptool version issue. [Link](https://answers.ros.org/question/398497/building-from-source-rqt-fails/), or ```pip install setuptools==58.2.0``` to change to older version
+
 ## Getting Started
 ### On Raspberry Pi
 1. Clone this project and navigate to root.
